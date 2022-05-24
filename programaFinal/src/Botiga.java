@@ -24,7 +24,7 @@ public class Botiga {
 	}
 	public void menuNoClient() 
 	{
-		
+		System.out.println("hola");	
 	}
 
 }
