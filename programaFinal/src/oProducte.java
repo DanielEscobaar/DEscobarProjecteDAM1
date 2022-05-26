@@ -68,8 +68,8 @@ public class oProducte {
 		// resultat
 		ResultSet resultat = stmt.executeQuery("SELECT * FROM productes WHERE codi = "+codiProducte+";");
 		if(codiProducte == 0) return returnInt = 2;
-		if(resultat.next()) return returnInt = 1;
-		else return returnInt = 0;
+		if(resultat.next()) return returnInt = 0;
+		else return returnInt = 1;
 	}
 	
 }
