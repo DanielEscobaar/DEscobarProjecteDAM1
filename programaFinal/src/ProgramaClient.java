@@ -18,10 +18,8 @@ public class ProgramaClient {
 		boolean menu = false;
 		boolean login = false;
 		int opcioMenu = 0;
-		do
-		{
-			
-		}while(!menu);
+		
+        comprarProductes(login,client,connexioPsql);
     }
     public static void comprarProductes(boolean login, oClient client, Connection connexioPsql) throws Exception{
 		if(login){

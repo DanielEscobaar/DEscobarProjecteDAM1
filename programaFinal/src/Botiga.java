@@ -57,7 +57,6 @@ public class Botiga {
 							System.out.println("|    Aquesta opcio no es correcte, torna a provar.       |");
 						break;
 				}
-				
 			}while(!menu);
 		}
 		catch(Exception e) 
