@@ -65,7 +65,7 @@ public class oClient {
 		// estat
 		Statement stmt=connexioPsql.createStatement(ResultSet.TYPE_FORWARD_ONLY,ResultSet.CONCUR_READ_ONLY);
 		// resultat
-		ResultSet resultat = stmt.executeQuery("SELECT dni FROM clients WHERE dni = '"+dni+"';");
+		ResultSet resultat = stmt.executeQuery("SELECT dni FROM clients WHERE dni = "+dni+";");
 		if(resultat.next()) return returnBool = true;
 		else return returnBool = false;
 	}
@@ -101,3 +101,4 @@ public class oClient {
 	}
 
 }
+
